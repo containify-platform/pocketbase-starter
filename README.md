@@ -1,9 +1,11 @@
 # PocketBase starter
 
+[![Deploy on Containify](https://containify.cloud/deploy-button.svg)](https://containify.cloud/templates/pocketbase)
+
 [PocketBase](https://pocketbase.io) in a small container: an open-source backend in one
 file, with a SQLite database, auth, file storage, realtime subscriptions and an admin
 dashboard. This repo is the source of the
-[PocketBase template](https://containify.net/templates/pocketbase) on Containify.
+[PocketBase template](https://containify.cloud/templates/pocketbase) on Containify.
 
 The Dockerfile downloads a pinned PocketBase release, checks it against the release's
 SHA-256 checksum and runs it as a non-root user (uid 1000). Everything PocketBase stores
@@ -38,6 +40,10 @@ Without them, PocketBase logs a one-time installer link to create the first supe
 
 ## Deploy on Containify
 
+[![Deploy on Containify](https://containify.cloud/deploy-button.svg)](https://containify.cloud/templates/pocketbase)
+
+One click deploys it on [Containify](https://containify.cloud). The [template page](https://containify.cloud/templates/pocketbase) shows what it creates, and passwords, connection strings and the HTTPS address are filled in for you.
+
 Deploy the PocketBase template from the Containify catalogue: it builds this repo, mounts
 a volume on `/pb/pb_data` and gives the app an HTTPS address. To change PocketBase itself
 (migrations, hooks, a newer release), fork this repo and point the app at your fork.
@@ -51,3 +57,7 @@ minor releases can change its APIs.
 ## License
 
 MIT for this repo. PocketBase itself is MIT licensed too.
+
+---
+
+Made by [Containify](https://containify.cloud): deploy apps, databases and workers from a Git repo or an image, with per-second billing. [Docs](https://containify.cloud/docs) · [Templates](https://containify.cloud/templates)
