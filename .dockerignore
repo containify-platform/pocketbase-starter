@@ -1,0 +1,4 @@
+.git
+pb_data
+*.md
+!README.md
